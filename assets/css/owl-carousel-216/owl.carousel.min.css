@@ -8,3 +8,5 @@
 /*more custom css for slider*/
 .video-container iframe, .video-container object, .video-container embed { position:absolute; top:0;left:0;width:100%;height:100%;}
 #slider .container { margin: 0 auto 30px;}
+#actions .container .btn {margin: 30px 5px 0px 0px;}
+#footer .copy-right-info{text-align: center;}
