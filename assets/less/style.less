@@ -150,8 +150,7 @@
 }
 
 .navbar {
-  background: #2c303b;
-
+  background: #38a1e3;
   .container > ul {
     display: block;
     width: 100%;
@@ -213,7 +212,7 @@
 
 .jumbotron {
   position: relative;
-  background: #2c303b;
+  background: #38a1e3;
   color: #fff;
   border-bottom: 1px;
   font-size: @font-size-base;
@@ -262,10 +261,6 @@
   .jumbotron-screenshot img {
     display: block;
     max-width: 100%;
-  }
-
-  .jumbotron-video {
-    padding-left: 20px;
   }
 
   .home & {
@@ -396,7 +391,7 @@
 }
 
 #quotes {
-  background: #2c303b;
+  background: #155e88;
   color: #fff;
   border-bottom: none;
   position: relative;
@@ -441,4 +436,155 @@
 
 #footer {
   padding: 20px 0 10px;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #f47b20;
+  border-color: #ff5c26;
+}
+@media (max-width: 767px) {
+  .nav.navbar-nav {
+    display: none !important;
+  }
+  .navbar-collapse.collapse {
+    display: block !important;
+    .nav.navbar-nav {
+      display: block !important;
+    }
+    .dropdown-toggle {
+      width: 50px;
+      height: 40px;
+      border: 1px solid #fff;
+      left: 10px;
+      text-align: center;
+    }
+    .dropdown-menu>li>a {
+      color: #fff;
+    }
+    .nav .open>a, 
+    .nav .open>a:hover, 
+    .nav .open>a:focus {
+      border-color: #fff;
+    }
+    .list-social {
+      margin: 0;
+      padding: 0;
+      float: right;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    
+      li {
+        width: 50px;
+        height: 40px;
+        float: left;
+        list-style: none;
+        border: 1px solid #fff;
+        text-align: center;
+        margin-left: 5px;
+        line-height: 40px;
+      }
+    }
+    .navbar-nav .open .dropdown-menu>li>a, 
+    .navbar-nav .open .dropdown-menu .dropdown-header {
+      padding-left:  10px;
+    }
+  }
+  .home {
+    .navbar {
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .jumbotron {
+      padding: 70px 0;
+      p {
+        font-size: 32px;
+      }
+    }
+  }
+  .section {
+    padding: 40px 0;
+  }
+  .section-title {
+    margin: 20px 10px;
+    font-size: 22px;
+  }
+  .section-description {
+    margin: 0 0 40px;
+  }
+  #quotes blockquote p {
+    font-size: 18px;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .jumbotron-video {
+    margin-top: 20px;
+  }
+
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar .social {
+    float: right;
+    position: fixed;
+    top: 100px;
+    right: 39px;
+    height: 180px;
+    width: 40px;
+    li {
+      background: #38a1e3;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      float: left;
+      text-align: center;
+      border: 1px solid #fff;
+      margin-bottom: 0;
+      border-bottom: 0;
+      line-height: 40px;
+      a {
+        padding: 0 !important;
+      }
+      &:last-child {
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .jumbotron-video {
+    margin-top: 0px;
+  }
+  .navbar .social {
+    position: static;
+    height: auto;
+    width: auto;
+    li {
+      display: inline-block;
+      width: auto;
+      height: auto;
+      float: none;
+      text-align: center;
+      border: 0;
+      margin-bottom: 0;
+      border-bottom: 0;
+      line-height: inherit;
+      a {
+        padding: 15px !important;
+      }
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1170px) {
+
 }
